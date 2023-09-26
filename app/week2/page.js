@@ -1,4 +1,5 @@
 import StudentInfo from "../StudentInfo";
+import Link from "next/link";
 
 export default function Page() {
     return(
@@ -8,6 +9,9 @@ export default function Page() {
             </div>
             <div>
                 <StudentInfo />
+            </div>
+            <div>
+                <Link href="../" className="underline">Back</Link>
             </div>
         </main>
     );
