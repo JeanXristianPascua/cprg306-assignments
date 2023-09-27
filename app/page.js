@@ -11,10 +11,13 @@ export default function Page() {
         <StudentInfo />
       </div>
       <div>
-        <Link href="./week2">Week 2</Link>
+        <Link href="./week2" className="underline">Week 2</Link>
       </div>
       <div>
-        <Link href="./week3">Week 3</Link>
+        <Link href="./week3" className="underline">Week 3</Link>
+      </div>
+      <div>
+        <Link href="./week4" className="underline">Week 4</Link>
       </div>
     </main>
   );
