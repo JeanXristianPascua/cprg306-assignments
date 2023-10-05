@@ -9,6 +9,7 @@ export default function NewItem() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        alert(`Submitting ${name} ${quantity} ${category}`);
 
         const newItem = {
             name,
@@ -21,6 +22,10 @@ export default function NewItem() {
         setQuantity(1);
         setCategory("produce");
     };
+
+    const incrementQuantity = () => {
+        setQuantity(quantity + 1);
+    }
 
     const handleNameChange = (event) => {
         setName(event.target.value);
@@ -66,6 +71,7 @@ export default function NewItem() {
                         value={category}
                         onChange={handleCategoryChange}
                     />
+                <button onClick={incrementQuantity}>+</button>
                 </label>
 
                 <button 
