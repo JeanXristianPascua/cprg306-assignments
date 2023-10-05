@@ -23,10 +23,6 @@ export default function NewItem() {
         setCategory("produce");
     };
 
-    const incrementQuantity = () => {
-        setQuantity(quantity + 1);
-    }
-
     const handleNameChange = (event) => {
         setName(event.target.value);
     };
@@ -54,24 +50,36 @@ export default function NewItem() {
                         placeholder="Enter item name"
                         value={name}
                         onChange={handleNameChange}
+                        required
                     />
                 </label>
                 <label className="block mb-4">
                     <span className="text-gray-700">Quantity</span>
                     <input
+                        type="number"
                         className="mt-1 p-1 block w-full rounded-md text-black bg-gray-100 focus:bg-white"
                         value={quantity}
                         onChange={handleQuantityChange}     
+                        min={1}
+                        max={99}
                     />    
                 </label>
                 <label className="block mb-4">
                     <span className="text-gray-700">Category</span>
-                    <input
+                    <select
                         className="mt-1 p-1 block w-full rounded-md text-black bg-gray-100 focus:bg-white"
-                        value={category}
-                        onChange={handleCategoryChange}
                     />
-                <button onClick={incrementQuantity}>+</button>
+                        <option value="produce">Produce</option>
+                        <option value="dairy">Dairy</option>
+                        <option value="bakery">Bakery</option>
+                        <option value="meat">Meat</option>
+                        <option value="frozen foods">Frozen Foods</option>
+                        <option value="canned goods">Canned Goods</option>
+                        <option value="dry goods">Dry Goods</option>
+                        <option value="beverages">Beverages</option>
+                        <option value="snacks">Snacks</option>
+                        <option value="household">Household</option>
+                        <option value="other">Other</option>
                 </label>
 
                 <button 
