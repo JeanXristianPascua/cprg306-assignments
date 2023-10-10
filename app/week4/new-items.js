@@ -66,9 +66,8 @@ export default function NewItem() {
                 </label>
                 <label className="block mb-4">
                     <span className="text-gray-700">Category</span>
-                    <select
-                        className="mt-1 p-1 block w-full rounded-md text-black bg-gray-100 focus:bg-white"
-                    />
+                    <select onChange={handleCategoryChange} className="mt-1 p-1 block w-full rounded-md text-black bg-gray-100 focus:bg-white">
+                        <option disabled>Category</option>
                         <option value="produce">Produce</option>
                         <option value="dairy">Dairy</option>
                         <option value="bakery">Bakery</option>
@@ -80,6 +79,7 @@ export default function NewItem() {
                         <option value="snacks">Snacks</option>
                         <option value="household">Household</option>
                         <option value="other">Other</option>
+                    </select>
                 </label>
 
                 <button 
