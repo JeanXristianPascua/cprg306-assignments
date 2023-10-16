@@ -1,9 +1,20 @@
-import ItemList from "../week5/item-list";
+import ItemList from "./item-list";
+import Link from "next/link";
 
 export default function Page() {
-    return (
-        <main>
+  return (
+    <>
+    <main>
+        <div>
+            <h1 className="text-4xl">My Shopping List</h1>
+        </div>
+        <div>
             <ItemList />
-        </main>
-    );
+        </div>
+        <div>
+            <Link href="../" className="underline">Back</Link>
+        </div>
+    </main>
+    </>
+  );
 }
