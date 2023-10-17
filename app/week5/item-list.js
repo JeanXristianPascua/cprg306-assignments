@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Item from './item';
 import items from './items.json';
 
-const ItemList = () => {
+export default function ItemList(){
   const [sortBy, setSortBy] = useState('name');
 
   const sortedItems = [...items].sort((a, b) => {
@@ -46,5 +46,3 @@ const ItemList = () => {
     </div>
   );
 };
-
-export default ItemList;

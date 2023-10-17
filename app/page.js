@@ -3,9 +3,9 @@ import StudentInfo from "./StudentInfo";
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex-">
-        <h1 className="text-4xl"> CPRG 306: Web Development 2 - Assignments</h1>
+    <main>
+      <div>
+        <h1> CPRG 306: Web Development 2 - Assignments</h1>
       </div>
       <div>
         <StudentInfo />
@@ -21,6 +21,9 @@ export default function Page() {
       </div>
       <div>
         <Link href="./week5" className="underline">Week 5</Link>
+      </div>
+      <div>
+        <Link href="./week6" className="underline">Week 6</Link>
       </div>
     </main>
   );
