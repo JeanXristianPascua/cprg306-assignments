@@ -6,7 +6,7 @@ export default function Page() {
     <>
     <main>
         <div>
-            <h1 className="text-4xl">My Shopping List</h1>
+            <h1 className="text-3xl font-bold m-2">My Shopping List</h1>
         </div>
         <div>
             <ItemList />
