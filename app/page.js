@@ -25,6 +25,12 @@ export default function Page() {
       <div>
         <Link href="./week6" className="underline">Week 6</Link>
       </div>
+      <div>
+        <Link href="./week7" className="underline">Week 7</Link>
+      </div>
+      <div>
+        <Link href="./week8" className="underline">Week 8</Link>
+      </div>
     </main>
   );
 }
