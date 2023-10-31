@@ -1,6 +1,7 @@
 "use client"
 
 import { useUserAuth } from "./_utils/auth-context";
+import Link from "next/link";
 
 export default function LandingPage() {
   const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
@@ -32,7 +33,7 @@ export default function LandingPage() {
           <p>
             <button className="text-lg hover:underline" onClick={handleLogout}>Logout</button>
           </p>
-          <a className="text-lg hover:underline" href="/week8/shopping-list">Go to Shopping List</a>
+          <Link className="text-lg hover:underline" href="/week8/shopping-list">Go to Shopping List</Link>
         </div>
       ) : (
         <button onClick={handleLogin}>Login with GitHub</button>
